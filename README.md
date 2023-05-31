@@ -1,57 +1,57 @@
-# 0x1D C - Binary trees :pencil2:
+# Binary Trees Overview #
+The scripts contained in this repository are implementations and operations of a binary tree, binary search tree, avl tree and binary heap.  
 
-> C is a powerful general-purpose programming language. It can be used to develop software like operating systems, databases, compilers, and so on. This projects covers the concepts of binary trees!
+## General ##
+0. What is a binary tree?  
+A binary tree is a data structure where each node has at most two children called a left child and a right child.  If a node has only one child, the other child is pointed to NULL.  If a node doesn't have children, it's called a leaf node.  The nodes are unordered, thus would be slow to search, insert and/or delete.  
 
-At the end of this project, We were able to undesrtand these questions:
-  
-* What is a binary tree
-* What is the difference between a binary tree and a Binary Search Tree
-* What is the possible gain in terms of time complexity compared to linked lists
-* What are the depth, the height, the size of a binary tree
-* What are the different traversal methods to go through a binary tree
-* What is a complete, a full, a perfect, a balanced binary tree
+1. What is the difference between a binary tree and a Binary Search Tree?  
+A Binary Search Tree is an abstract data structure called a container that stores data items to memory.  It could also be considered as a type of binary tree.  The left subtree contains only nodes with keys less than the parent.  The right subtree contains only nodes with keys greater than the parent.  The subtrees themselves must also be a binary search tree.  Since the nodes are ordered, the process of searching, inserting and/or deleting would be faster than a binary tree.  
 
-## Tasks :heavy_check_mark:
+2. What is the possible gain in terms of time complexity compared to linked lists?  
+The travel time in a linked list is longer than a binary tree because every node would be visited.  Meanwhile, there are many possible paths to travel in a binary tree.  The lookup time is the best possible gain in implementing a binary tree rather than a linked list.  
 
-0. Function that creates a binary tree node
-1. Function that inserts a node as the left-child of another node
-2. Function that inserts a node as the right-child of another node
-3. Function that deletes an entire binary tree
-4. Function that checks if a node is a leaf
-5. Function that checks if a given node is a root
-6. Function that goes through a binary tree using pre-order traversal
-7. Function that goes through a binary tree using in-order traversal
-8. Function that goes through a binary tree using post-order traversal
-9. Function that measures the height of a binary tree
-10. Function that measures the depth of a node in a binary tree
-11. Function that measures the size of a binary tree
-12. Function that counts the leaves in a binary tree
-13. Function that counts the nodes with at least 1 child in a binary tree
-14. Function that measures the balance factor of a binary tree
-15. Function that checks if a binary tree is full
-16. Function that checks if a binary tree is perfect
-17. Function that finds the sibling of a node
-18. Function that finds the uncle of a node
-19. Function that finds the lowest common ancestor of two nodes
-20. Function that goes through a binary tree using level-order traversal
-21. Function that checks if a binary tree is complete
-22. Function that performs a left-rotation on a binary tree
-23. Function that performs a right-rotation on a binary tree
-24. Function that checks if a binary tree is a valid Binary Search Tree
-25. Function that inserts a value in a Binary Search Tree
-26. Function that builds a Binary Search Tree from an array
-27. Function that searches for a value in a Binary Search Tree
-28. Function that removes a node from a Binary Search Tree
-29. What are the average time complexities of those operations on a Binary Search Tree
-30. Function that checks if a binary tree is a valid AVL Tree
-31. Function that inserts a value in an AVL Tree
-32. Function that builds an AVL tree from an array
-33. Function that removes a node from an AVL tree
-34. Function that builds an AVL tree from an array
-35. What are the average time complexities of those operations on an AVL Tree
-36. Function that checks if a binary tree is a valid Max Binary Heap (Task in progress)
-37. Function that inserts a value in Max Binary Heap (Task in progress)
-38. Function that builds a Max Binary Heap tree from an array (Task in progress)
-39. Function that extracts the root node of a Max Binary Heap (Task in progress)
-40. Function that converts a Binary Max Heap to a sorted array of integers (Task in progress)
-41. What are the average time complexities of those operations on a Binary Heap
+3. What are the depth, the height, the size of a binary tree?  
+The nodes in a binary tree are connected by a edge.  The sequence formed by a nodes and edges are called a path.  The depth also known as level is the number of edges from the root which starts at 0 to 3.  The height of a node is the number of edges on the longest path between itself and a leaf.  Every node has a height and the root node is 1.  The height of a tree is the number of edges on the longest path between the root and a leaf.  The size of a binary tree is the total number of nodes.  
+
+![binarytreecomponents](https://i.imgur.com/vRhzu6m.png)
+
+4. What are the different traversal methods to go through a binary tree?  
+Traversal is the process of visiting each node in a binary tree.  There are three traversal methods: In-order Traversal, Pre-order Traversal and Post-order Traversal.  The In-order Traversal method is when the left subtree is visited first, then the root and finally it moves to the right subtree.  The Pre-order Traversal method is when the root node is visited first, then the left subtree and finally the right subtree.  The Post-order Traversal method is when the left subtree is visited first, then the right subtree and finally the root.  
+
+5. What is a complete, a full, a perfect, a balanced binary tree?  
+A complete binary tree is when all levels except the last level is filled and all nodes are as left as possible.  
+![completebinarytree](https://i.imgur.com/1Zxf2t8.png)
+
+    A full binary tree is when every node has either 2 children or no child at all.  
+![fullbinarytree](https://i.imgur.com/zplUc6x.png)
+
+    A perfect binary tree is when all levels are filled and all leaf nodes have the same depth.  
+![perfectbinarytree](https://i.imgur.com/brvhWyB.png)
+
+    A balanced binary tree is when the left and right subtrees of every node differs by at most one height.  
+![balancedbinarytree](https://i.imgur.com/7Stwtrv.png)
+
+## Resources ##
+0. Binary tree  
+https://en.wikipedia.org/wiki/Binary\_tree  
+
+1. Data Structure and Algorithms - Tree  
+https://www.tutorialspoint.com/data\_structures\_algorithms/tree\_data\_structure.htm  
+
+2. Data Structure & Algorithms - Tree Traversal  
+https://www.tutorialspoint.com/data\_structures\_algorithms/tree\_traversal.htm  
+
+3. Binary search tree  
+https://en.wikipedia.org/wiki/Binary\_search\_tree  
+
+4. Data structures: Binary Tree  
+https://www.youtube.com/watch?v=H5JubkIy\_p8  
+
+5. Difference between Binary Tree and Binary Search Tree  
+https://www.geeksforgeeks.org/difference-between-binary-tree-and-binary-search-tree/  
+
+## Contributors ##
+
+Princewill Mmadu
+Paul Sobande
